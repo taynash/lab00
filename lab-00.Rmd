@@ -21,7 +21,7 @@ team_data <- tibble(
            "member 3", "member 4"),
   github_username = c("taynash", "username 1", "username 2", 
                       "username 3", "username 4"), 
-  colour = c("green", "colour 1", "colour 2", 
+  colour = c("darkgreen", "colour 1", "colour 2", 
              "colour 3", "colour 4"),
   hobby = c("gym", "hobby 1", "hobby 2", 
             "hobby 3", "hobby 4"),
@@ -47,19 +47,17 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+This graph shows the groups info with Github Username on the x-axis and their favourite number on the y-axis. The colour of the bar represents their favourite colour.
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "Github Username", 
+          y = "Favourite Number",
+          title = "Group Info")
 ```
-
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
 
 ### Exercise 20
 
@@ -69,4 +67,5 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+Hobbies vary person to person and it is unlikely that people have the same hobby, so if we were to increase the dataset to include more people on the course, whilst there may be repeated results the number of possible answers will still be similar to the number of entities therefore the data would still not be suitable.
+
